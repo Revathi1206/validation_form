@@ -26,7 +26,6 @@ submit.addEventListener("click", function (e) {
             lname.textContent = lastName.value;
             phn.textContent = phone.value;
             add.textContent = address.value;
-            alert("scroll down the page");
             firstName.value = lastName.value = address.value = phone.value = '';
             hiddenBox.style.display = "block";
             scrolldown.style.opacity = 1;
