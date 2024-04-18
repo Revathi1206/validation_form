@@ -1,0 +1,55 @@
+body {
+    background: url('bg1.jpg') center;
+    background-size: cover;
+
+}
+
+.container h1 {
+    color: rgb(178, 236, 229);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.form-can {
+    background: rgba(0, 0, 0, 0.6);
+    color: rgb(146, 216, 216);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+label {
+    font-size: 25px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+input,
+textarea {
+    height: 3rem;
+    width: 60%;
+    border: 2px solid rgb(102, 163, 102);
+}
+
+.btn,
+.cl-btn {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.popup-msg {
+    display: none;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+
+.details-hidden {
+    display: none;
+    height: 200px;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
