@@ -11,6 +11,22 @@ const popup = document.querySelector(".popup-msg")
 const clear = document.querySelector(".cl-btn")
 const hiddenBox = document.querySelector(".details-hidden");
 
+
+const forms = document.querySelectorAll('.needs-validation')
+
+// Loop over them and prevent submission
+Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+    }, false)
+})
+
+
 submit.addEventListener("click", function (e) {
     console.log(phone.value.length);
     if (firstName.value && lastName.value && address.value && phone.value) {
@@ -26,11 +42,11 @@ submit.addEventListener("click", function (e) {
             lname.textContent = lastName.value;
             phn.textContent = phone.value;
             add.textContent = address.value;
-            firstName.value = lastName.value = address.value = phone.value = '';
+            // firstName.value = lastName.value = address.value = phone.value = '';
             hiddenBox.style.display = "block";
             scrolldown.style.opacity = 1;
             document.body.style.overflow = "visible"
-            firstName.value = lastName.value = address.value = phone.value = '';
+            // firstName.value = lastName.value = address.value = phone.value = '';
 
         }
         else {
@@ -38,9 +54,6 @@ submit.addEventListener("click", function (e) {
             popup.textContent = "Invalid  details Try again";
             firstName.value = lastName.value = '';
         }
-    }
-    else {
-        alert("please fill all details");
     }
 })
 
