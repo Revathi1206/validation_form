@@ -75,7 +75,7 @@ submit.addEventListener("click", function (e) {
 })
 
 clear.addEventListener("click", function () {
-    firstName.value = lastName.value = address.value = phone.value = email.value = date = '';
+    firstName.value = lastName.value = address.value = phone.value = emailId.value = Date.value = '';
 
 })
 
