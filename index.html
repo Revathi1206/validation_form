@@ -15,42 +15,55 @@
 
     <div class="container border border-success my-3  form-can">
         <h1 class="text-center">Sample Form</h1>
-        <form action="" class="container ">
+        <form action="" class="container needs-validation" class="" id="forms" novalidate>
             <div class="row text-center my-5">
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <label for="valid1">First Name</label>
                 </div>
-                <div class="col-lg-8 col-md-6 col-sm-12">
-                    <input type="text" id="valid1" class="form-control border border-info " placeholder="example:john"
-                        required>
+                <div class="col-lg-8 col-md-6 col-sm-12 has-validation">
+
+                    <input type="text" id="valid1" class="form-control " placeholder="example:john" required>
+                    <div class="invalid-tooltip position-relative top-0 strat-0">
+                        Please enter your first name
+                    </div>
+
                 </div>
             </div>
             <div class="row text-center my-5">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 has-validation">
                     <label for="valid2">Last Name</label>
                 </div>
                 <div class="col-lg-8 col-md-6 col-sm-12">
-                    <input type="text" id="valid2" class="form-control border border-info" placeholder="example:smith"
-                        required>
+                    <input type="text" id="valid2" class="form-control " placeholder="example:smith" required>
+                    <div class="invalid-tooltip position-relative top-0 strat-0">
+                        Please enter your Last name
+                    </div>
                 </div>
             </div>
 
             <div class="row text-center my-5">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 ">
                     <label for="valid3">Phone number</label>
+
                 </div>
-                <div class="col-lg-8 col-md-6 col-sm-12">
+                <div class="col-lg-8 col-md-6 col-sm-12 has-validation">
                     <input type="phone" id="valid3" class="form-control border border-info" required>
+                    <div class="invalid-tooltip position-relative top-0 strat-0">
+                        Please enter Phone Number
+                    </div>
                 </div>
             </div>
 
             <div class="row text-center my-5">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 ">
                     <label for="valid4">Address</label>
                 </div>
-                <div class="col-lg-8 col-md-6 col-sm-12">
+                <div class="col-lg-8 col-md-6 col-sm-12 has-validation">
                     <textarea name="" id="valid4" cols="30" rows="10" class="form-control border border-info"
                         required></textarea>
+                    <div class="invalid-tooltip position-relative top-0 strat-0">
+                        Please enter Address
+                    </div>
                 </div>
             </div>
 
