@@ -1,10 +1,10 @@
-const submit = document.querySelector(".sub-btn");
-const firstName = document.getElementById("valid1");
-const lastName = document.getElementById("valid2");
-const address = document.getElementById("valid4");
-const phone = document.getElementById("valid3");
-const emailId = document.getElementById("valid6");
-const Date = document.getElementById("valid5");
+var submit = document.querySelector(".sub-btn");
+var firstName = document.getElementById("valid1");
+var lastName = document.getElementById("valid2");
+var address = document.getElementById("valid4");
+var phone = document.getElementById("valid3");
+var emailId = document.getElementById("valid6");
+var Date = document.getElementById("valid5");
 
 const fname = document.querySelector(".fname");
 const lname = document.querySelector(".lname");
@@ -75,7 +75,9 @@ submit.addEventListener("click", function (e) {
 })
 
 clear.addEventListener("click", function () {
-    firstName.value = lastName.value = address.value = phone.value = emailId.value = Date.value = '';
+    firstName.value = lastName.value = address.value = phone.value = '';
+    emailId.value = Data.value = '';
+    
 
 })
 
