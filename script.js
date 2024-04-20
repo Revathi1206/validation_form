@@ -77,8 +77,24 @@ submit.addEventListener("click", function (e) {
 clear.addEventListener("click", function () {
     firstName.value = lastName.value = address.value = phone.value = '';
     emailId.value = Data.value = '';
-    
+    // emailId.value = Date.value = '';
 
 })
 
+window.addEventListener("scroll", function () {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    if (window.pageYOffset > 100) {
+        // Show scroll-to-top button
+        scrollToTopBtn.classList.add("show");
+    } else {
+        // Hide scroll-to-top button
+        scrollToTopBtn.classList.remove("show");
+    }
+});
 
+document.getElementById("scrollToTopBtn").addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
